@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get to Know Vaiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black; /* Background color set to black */
+            color: white; /* Text color set to white */
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #333; /* Container background color set to dark gray */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #fff; /* Heading color set to white */
+        }
+
+        #message {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi, I'm Vaiz</h1>
+        <p id="message"></p>
+        <button class="button" onclick="revealMessage()">Click to Get to Know Me</button>
+        <button class="button" onclick="contactMe()">Wanna talk to me? Click here</button>
+    </div>
+
+    <script>
+        function revealMessage() {
+            const messageElement = document.getElementById("message");
+            messageElement.textContent = "Hello, I'm Vaiz.";
+        }
+
+        function contactMe() {
+            const messageElement = document.getElementById("message");
+            messageElement.textContent = "Contact me at real#4727 or beaming#0001 or bs#0001.";
+        }
+    </script>
+</body>
+</html>
